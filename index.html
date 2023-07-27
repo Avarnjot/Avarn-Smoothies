@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avarn Smoothies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Heading for my webpage -->
+        <div class="head">
+            <h1>Avarn Smoothies</h1>
+            <h2>Order Here!</h2>
+        </div>
+
+        <!-- this div contains all the images of smoothie to be selected -->
+        <div class="img-list">
+            <div>
+                <label>
+                    <input type="radio" id="smoothie" name="smoothie" value="Lime">
+                    <img src="img/lime.svg" id="smoothie" alt="Lime Smoothie" value="Lime" onclick="showImg(this)" />
+                    <figcaption>Lime</figcaption>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="radio" id="smoothie" name="smoothie" value="Grape">
+                    <img src="img/grape.svg" id="smoothie" alt="Grape Smoothie" value="Grape" onclick="showImg(this)">
+                    <figcaption>Grape</figcaption>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="radio" id="smoothie" name="smoothie" value="Milkshake">
+                    <img src="img/milkshake.svg" id="smoothie" alt="Milkshake Smoothie" value=Milkshake"
+                        onclick="showImg(this)" />
+                    <figcaption>Milkshake</figcaption>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="radio" id="smoothie" name="smoothie" value="Orange">
+                    <img src="img/orange-juice.svg" id="smoothie" alt="Orange Smoothie" value="Orange"
+                        onclick="showImg(this)" />
+                    <figcaption>Orange</figcaption>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="radio" id="smoothie" name="smoothie" value="Strawberry">
+                    <img src="img/strawberry.svg" id="smoothie" alt="Strawberry Smoothie" value="Strawberry"
+                        onclick="showImg(this)" />
+                    <figcaption>Strawberry</figcaption>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="radio" id="smoothie" name="smoothie" value="cocktail">
+                    <img src="img/cocktail.svg" id="smoothie" alt="cocktail Smoothie" value="cocktail"
+                        onclick="showImg(this)" />
+                    <figcaption>Cocktail</figcaption>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="radio" id="smoothie" name="smoothie" value="Nuts">
+                    <img src="img/honey.svg" id="smoothie" alt="Nuts Smoothie" value="Nuts"
+                        onclick="showImg(this)" />
+                    <figcaption>Nuts</figcaption>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="radio" id="smoothie" name="smoothie" value="soda">
+                    <img src="img/soda.svg" id="smoothie" alt="soda Smoothie" value="soda"
+                        onclick="showImg(this)" />
+                    <figcaption>Soda</figcaption>
+                </label>
+            </div>
+        </div>
+
+        <!-- Size to be selected -->
+        <div class="size" id="size">
+            <label><b><u>Select Size</u></b></label><br>
+            <label>
+                <input type="radio" id="small" name="size" value="Small">Small
+            </label>
+            <label>
+                <input type="radio" id="medium" name="size" value="Medium">Medium
+            </label>
+            <label>
+                <input type="radio" id="large" name="size" value="Large">Large
+            </label><br><br>
+        </div>
+
+        <!-- Topping to be selected -->
+        <div class="topping" id="topping">
+            <label><b><u>Select Topping</u></b></label><br>
+            <label>
+                <input type="radio" id="topping1" name="topping" value="topping1">Fresh Fruits
+            </label><br>
+            <label>
+                <input type="radio" id="topping2" name="topping" value="topping2">Nuts and Seeds
+            </label><br>
+            <label>
+                <input type="radio" id="topping3" name="topping" value="topping3">Granola
+            </label><br>
+            <label>
+                <input type="radio" id="topping4" name="topping" value="topping4">Mint
+            </label><br>
+            <label>
+                <input type="radio" id="topping5" name="topping" value="topping5">Honey
+            </label><br><br>
+        </div>
+
+        <!-- Quantity to be selected -->
+        <div class="quantity">
+            <label><b><u>Select Quantity</u></b></label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="" required />
+        </div>
+
+        <!-- Div contains the button on clicking which the function runs -->
+        <div class="in-button">
+            <button onclick="price()">Place Order</button>
+        </div>
+
+        <!-- div to display output of image -->
+        <div class="footer">
+            <div class="final-img">
+                <figure id="figure">
+                    <img src="" alt="" width="1200" height="800" id="img_to_be_shown" />
+                    <figcaption id="title">Smoothie</figcaption>
+                </figure>
+            </div>
+
+            <!-- div to display output of text -->
+            <div id="result" class="result">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

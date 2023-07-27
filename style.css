@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(#03d8b3, #fb80be);
+}
+
+.container {
+    width: 70%;
+    margin: 0px auto;
+    height: auto;
+    background-color: white;
+    background-image: url(img/background.jpeg);
+    font-family: "Sofia";
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+}
+
+.img-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 10px;
+}
+
+.img-list div {
+    /* width: auto; */
+    /* height: 100px; */
+}
+
+.head {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    /* background-color: pink; */
+
+}
+
+.img-list img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.img-list input {
+    visibility: hidden;
+}
+
+.img-list img:hover {
+    border: 2px solid white;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.selected-img {
+    border: 5px solid white;
+}
+
+.size {
+    width: 100%;
+    /* background-color: pink; */
+    margin-top: 50px;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.size label {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.topping {
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.quantity {
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0px auto;
+    text-align: center;
+    /* background-color: pink; */
+
+}
+
+.quantity input {
+    height: 20px;
+}
+
+.footer {
+    width: 100%;
+    /* height: 200px; */
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr;
+}
+
+.final-img {
+    width: 70%;
+    height: fit-content;
+    margin: 10px auto;
+    /* border: 1px solid black; */
+}
+
+.final-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.final-img figcaption {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.result {
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: auto auto;
+    color: black;
+}
+
+.in-button {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+button {
+    /* width:180px; */
+    padding: 0px 10px;
+    height: 50px;
+    font-size: 1.5em;
+    background-color: #dfee9f;
+    border: none;
+    font-family: 'sofia';
+    font-weight: 700;
+}
