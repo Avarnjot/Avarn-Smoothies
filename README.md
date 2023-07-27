@@ -1,2 +1,1 @@
-# Avarn-Smoothies
-Hi Avarnjot, I have created a page replicating a small Smoothie Store where one can buy and pay for the smoothie quickly and effortlessly.
+The Avarn Smoothies Web App was created to provide users with an enjoyable and interactive experience when customizing and ordering smoothies online. The app's simple and intuitive design allows users to quickly select their preferences and receive a comprehensive order summary before proceeding with their purchase.
